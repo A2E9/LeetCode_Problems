@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class L202_isHappy {
     //Java Time beats up 97% 1ms-3ms, Memory beats 8% - 92%
     //commented takes 3-4ms
