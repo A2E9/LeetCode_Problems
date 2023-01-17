@@ -1,0 +1,20 @@
+TiereMassaker
+
+Tiere Klasse Hauptklasse
+
+4 Subklassen:
+Raubtiere -> essen alle außer Vögel
+Fische -> essen Nahrung
+Pflanzenfresser -> essen Nahrung
+Vögel -> essen Fische
+
+
+Aufgabe 1.: 
+Anfangs werden von allen Tierarten Random 5-10 Objekte erstellt.
+Jede Runde werden dann alle Tiere versuchen zu Essen. Wenn sie kein Essen finden, sterben sie.
+Jede Runde werden 15 Nahrung gespawnt. Wenn nur noch Nahrungs essende überleben oder alle gestorben sind, ist das Programm fertig.
+
+Aufgabe 2.: 
+Jeder Tierart wird die Klasse Geschlecht vererbt. Anfangs wird das Geschlecht der Tiere random (53:47) bestimmt.
+Sind von einer Tierart 2 verschiedene (oder mehr) Geschlechter am Leben,
+besteht eine 20%ige Chance, dass in der Runde ein Tier der Tierart gespawnt/geboren wird. 
