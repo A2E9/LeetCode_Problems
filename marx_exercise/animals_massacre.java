@@ -59,18 +59,19 @@ public class animals_massacre {
         Method canEatAnimal = Animal.class.getDeclaredMethod("canEat", String.class);
 
         System.out.println("Spawning.\n");
-        // Thread.sleep(1000);
+        Thread.sleep(500);
         System.out.println("Spawning..\n");
-        // Thread.sleep(1000);
+        Thread.sleep(500);
         System.out.println("Spawning...\n");
-        // Thread.sleep(1000);
+        Thread.sleep(500);
 
         displayCountObjects(gameObjects);
 
         System.out.println("\nGame begins!");
 
-        for (; (gameObjects.get(0) != Nahrung.class);) { //if nahrung only left -> exit
-            if ((gameObjects.contains(Vogel.class)) ||(gameObjects.contains(Raubtier.class)) ) { // Nahrungsfresser left -> exit
+        for (; (!gameObjects.isEmpty());) { // if nahrung only left -> exit
+            if (((gameObjects.contains(Vogel.class)) || (gameObjects.contains(Raubtier.class))) //MAYBE BUG
+                    && (gameObjects.contains(Nahrung.class))) { // Nahrungsfresser left -> exit
 
                 System.out.println("\n\tNew Round\n");
 
@@ -87,11 +88,11 @@ public class animals_massacre {
 
                     for (int i = lastIndexOfAnimal; i < gameObjects.size(); i++) {
                         String animalToEat = gameObjects.get(i).getSimpleName();
-                        if ((Boolean) canEatAnimal.invoke(hunter, animalToEat)) {//hunter eating
+                        if ((Boolean) canEatAnimal.invoke(hunter, animalToEat)) {// hunter eating
                             gameObjects.remove(i);
                             foundFood = true;
                             System.out.println(animal.getSimpleName() + " ate " + animalToEat + ".");
-                            // Thread.sleep(200);
+                            Thread.sleep(100);
                             break;
                         } else {
                             i += gameObjects.lastIndexOf(gameObjects.get(i)) - i; // last index of next animal
@@ -101,7 +102,7 @@ public class animals_massacre {
                         gameObjects.remove(index);
                         index--; // stay on same index cz removed
                         System.out.println(animal.getSimpleName() + " died.");
-                        // Thread.sleep(200);
+                        Thread.sleep(100);
                     }
 
                 }
@@ -161,9 +162,7 @@ class Raubtier extends Animal {
     }
 
     public boolean canEat(String animal) {
-        if (animal.equals("Fisch") 
-         || animal.equals("Pflanzenfresser")
-         ) { //|| animal.equals("Nahrung")
+        if (animal.equals("Fisch") || animal.equals("Pflanzenfresser") || animal.equals("Nahrung")) { //
             return true;
         }
         return false;
