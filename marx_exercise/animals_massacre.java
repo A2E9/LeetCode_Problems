@@ -45,7 +45,7 @@ public class animals_massacre {
         System.out.println("Fisch: " + atomicFisch);
         System.out.println("Pflanzenfresser: " + atomicPflanzenfr);
 
-        System.out.println("Nahrung: " + atomicNahrung);
+        System.out.println("\nNahrung: " + atomicNahrung);
         // Thread.sleep(4000);
         System.out.println();
     }
@@ -69,7 +69,7 @@ public class animals_massacre {
 
         System.out.println("\nGame begins!");
 
-        for (; (!gameObjects.isEmpty());) { // if nahrung only left -> exit
+        for (; (!gameObjects.isEmpty());) { // !!! if nahrung only left -> exit
             if (((gameObjects.contains(Vogel.class)) || (gameObjects.contains(Raubtier.class))) //MAYBE BUG
                     && (gameObjects.contains(Nahrung.class))) { // Nahrungsfresser left -> exit
 
