@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class L1790_areAlmostEqual {
+public class _L1790_areAlmostEqual {
     public static boolean areAlmostEqual(String s1, String s2) {
 
         String[] arr1 = s1.split("");
@@ -21,7 +21,7 @@ public class L1790_areAlmostEqual {
 
     public static void main(String[] args) {
 
-        System.out.println(areAlmostEqual("bankkkks", "sbankkkk"));
+        System.out.println(areAlmostEqual("ankb", "bank"));
 
     }
 }
