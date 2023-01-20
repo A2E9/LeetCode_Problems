@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class _L1790_areAlmostEqual {
     public static boolean areAlmostEqual(String s1, String s2) {
 

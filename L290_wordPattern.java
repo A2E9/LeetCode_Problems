@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.HashMap;
 public class L290_wordPattern {
 
     public static boolean wordPattern(String pattern, String s) {
