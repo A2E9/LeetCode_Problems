@@ -36,7 +36,7 @@ public class bitwise_operations {
         System.out.println(num1+" = ["+Integer.toBinaryString(num1) + "] AND_OP " +num2+" = ["+ Integer.toBinaryString(num2) + "] == " + AND_OP(num1, num2) +" = ["+ Integer.toBinaryString(AND_OP(num1, num2))+"]");
         System.out.println(num1+" = ["+Integer.toBinaryString(num1) + "] OR_OP " +num2+" = ["+ Integer.toBinaryString(num2) + "] == " + OR_OP(num1, num2) +" = ["+ Integer.toBinaryString(OR_OP(num1, num2))+"]");
         System.out.println(num1+" = ["+Integer.toBinaryString(num1) + "] XOR_OP " +num2+" = ["+ Integer.toBinaryString(num2) + "] == " + XOR_OP(num1, num2) +" = ["+ Integer.toBinaryString(XOR_OP(num1, num2))+"]");
-        System.out.println(not+" = ["+Integer.toBinaryString(not) + "] NOT_OP == " + NOT_OP(not) +" = ["+ Integer.toBinaryString(NOT_OP(not))+"]");
+        System.out.println(not +" = ["+Integer.toBinaryString(not) + "] NOT_OP == " + NOT_OP(not) +" = ["+ Integer.toBinaryString(NOT_OP(not))+"]");
         System.out.println(num1+" = ["+Integer.toBinaryString(num1) + "] LEFT_SHIFT " +num4+" = ["+ Integer.toBinaryString(num4) + "] == " + LEFT_SHIFT(num1, num4) +" = ["+ Integer.toBinaryString(LEFT_SHIFT(num1, num4))+"]");
         System.out.println(num1+" = ["+Integer.toBinaryString(num1) + "] RIGHT_SHIFT " +num4+" = ["+ Integer.toBinaryString(num4) + "] == " + RIGHT_SHIFT(num1, num4) +" = ["+ Integer.toBinaryString(RIGHT_SHIFT(num1, num4))+"]");
         

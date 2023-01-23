@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class animals_massacre {
 
-    // Access Fields
+    // Access Fields 
     // Field[] fields = Animal.class.getDeclaredFields();
     // String animalName = animal.getName();
     // String fieldName = fields[3].getName();
@@ -82,7 +82,7 @@ public class animals_massacre {
                         break;
 
                     Boolean foundFood = false;
-                    Object hunter = animal.newInstance();
+                    Object hunter = animal.getDeclaredConstructor().newInstance();
 
                     int lastIndexOfAnimal = gameObjects.lastIndexOf(animal) + 1;
 
