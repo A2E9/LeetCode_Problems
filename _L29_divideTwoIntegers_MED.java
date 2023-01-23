@@ -1,4 +1,4 @@
-public class _L29_divideTwoIntegers {
+public class _L29_divideTwoIntegers_MED {
 
     public static int divide(int dividend, int divisor) {
         if (divisor == 0 || dividend == 0)

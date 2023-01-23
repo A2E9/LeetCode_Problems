@@ -1,4 +1,4 @@
-public class L65_isNumber {
+public class _L65_isNumber_HARD {
     public static boolean isNumber(String s) {
 
         

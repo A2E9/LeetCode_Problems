@@ -51,19 +51,3 @@ public class L202_isHappy {
         System.out.println(isHappy(22));
     }
 }
-
-// /**
-// * @param {number} n
-// * @return {boolean}
-// */
-// var isHappy = function(n) {
-// var digits = [];
-// while (n > 0) {
-// digits.push(n % 10);
-// n = Math.trunc(n / 10);
-// }
-// digits.reverse();
-// digits.map((digit) => {
-// console.log(Math.pow(digit, 2))
-// })
-// };

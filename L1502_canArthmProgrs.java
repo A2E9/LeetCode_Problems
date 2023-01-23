@@ -27,7 +27,7 @@ public class L1502_canArthmProgrs {
         System.out.println("return3: " + canMakeArithmeticProgression(arr3)); // true
         System.out.println("return4: " + canMakeArithmeticProgression(arr4)); // true
         System.out.println("return5: " + canMakeArithmeticProgression(arr5)); // false
-        System.out.println("return6: " + canMakeArithmeticProgression(arr6)); // must be false
+        System.out.println("return6: " + canMakeArithmeticProgression(arr6)); // false
 
     }
 }
