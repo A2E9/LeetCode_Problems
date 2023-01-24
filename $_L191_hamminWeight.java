@@ -1,7 +1,7 @@
 /**
  * L191_hamminWeight
  */
-public class _L191_hamminWeight {
+public class $_L191_hamminWeight {
 
     public static int hammingWeight(int n) {
         char[] binary = Integer.toBinaryString(n).toCharArray();

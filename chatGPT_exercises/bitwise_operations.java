@@ -28,7 +28,6 @@ public class bitwise_operations {
     public static int RS_ZERO_FILL_OP(int num1, int num2) {
         return num1 >>> num2;
     }
-   
 
     public static void main(String[] args) {
 
