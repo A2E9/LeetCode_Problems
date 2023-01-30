@@ -187,7 +187,7 @@ public class multithreading_exercises {
         ff1.join();
     }
     public static void main(String[] args) throws InterruptedException {
-
+        s_stringRev();
     }
 
     

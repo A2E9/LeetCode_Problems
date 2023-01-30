@@ -16,7 +16,7 @@ public class _L997_findJudge {
                     count2 = 1;
                 }
                 map.put(temp, count++);
-System.arraycopy(trust, i, map, temp, n);
+// System.arraycopy(trust, i, map, temp, n);
             } else {
                 // if (!map.containsKey(trust[i][0]))
                     map.put(temp, count2++);
